@@ -53,3 +53,5 @@ end
   
   terrance.waiters.length 
   
+  terrance.waiters.last.name
+  
