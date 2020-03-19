@@ -10,6 +10,12 @@ class Waiter
     @@all << self
   end 
   
+  def meals
+    Meal.all.select do |meal|
+      meal.waiter == self
+    end
+  end 
+  
   def self.all
     @@all 
   end
